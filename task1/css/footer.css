@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 64px;
+}
+.footer__content {
+    padding: 54px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--day-text-text-02, rgba(0, 0, 0, 0.54));
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 153.846% */
+    text-decoration: none;
+}
+
+.footer__content a {
+    color: var(--day-text-link, #336FEE);
+    text-decoration: none;
+}
