@@ -1,0 +1,64 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'title.css';
+@import 'button.css';
+@import 'card.css';
+@import 'list.css';
+@import 'step.css';
+
+:root {
+    --day-base-base-02: #F6F7F8;
+    --day-base-elevation-01: #FFF;
+    --day-text-text-02: rgba(0, 0, 0, 0.54);
+    --day-text-text-01: rgba(0, 0, 0, 0.80);
+    --day-text-link: #336FEE;
+    --day-base-primary: #FFDD2D;
+    --day-base-primary-hover: #FCC521;
+    --day-system-focus: rgba(51, 51, 51, 0.48);
+    --day-base-primary-active: #FAB619;
+}
+
+@media screen and (max-width: 1023px) {
+    @supports (zoom:normal){
+        html {
+            min-width: 1280px;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background: var(--day-base-base-02, #F6F7F8);
+}
+
+.container {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    max-width: 1104px;
+    min-width: 1104px;
+}
+
+.banner {
+    height: 460px;
+    flex-shrink: 0;
+}
+
+.default {
+    display: flex;
+    padding: 80px 0 40px 0; 
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.left-image {
+    width: 720px;
+    height: 360px;
+    flex-shrink: 0;
+}
