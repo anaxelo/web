@@ -11,25 +11,21 @@
     }
   }
 
-  a {
-    @apply focus:text-red-500 hover:text-red-400
-  }
-
   :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-
-    color-scheme: light dark;
+  
+    /* color-scheme: light dark; */
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
-
+/*   
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale; */
   }
-
+  
   body {
     margin: 0;
   }
@@ -44,12 +40,8 @@
     @apply bg-zinc-700 w-full relative block
   }
 
-  .header-content {
-    @apply flex items-center justify-between h-16
-  }
-
   .header__title {
-    @apply text-3xl shadow-sm
+    @apply text-3xl py-4 shadow-sm
   }
 
   .header__title [name=group] {
@@ -59,11 +51,11 @@
   .button {
     @apply p-2 shrink-0
   }
-
+  
   .button-red {
     @apply rounded-md bg-red-600 hover:bg-red-700 transition-colors duration-200
   }
-
+  
   .button-del {
     @apply rounded-md hover:bg-white/75 transition-colors duration-200 text-red-600 font-bold
   }
@@ -77,7 +69,7 @@
   }
 
   .card__img {
-    @apply h-52 aspect-square
+    @apply h-52 aspect-square p-2
   }
 
   .card__info {
@@ -97,27 +89,11 @@
   }
 
   .modal__window {
-    @apply lg:w-[1000px] md:w-[500px] bg-[#242424] flex lg:flex-row sm:flex-col relative
+    @apply lg:w-[1000px] md:w-[500px] bg-[#242424] flex lg:flex-row sm:flex-col
   }
 
   .modal__img {
     @apply bg-slate-200 lg:w-[50%] md:w-full min-w-0 aspect-square
-  }
-
-  .sendBG {
-    @apply absolute inset-0 bg-black/80 hidden justify-center items-center
-  }
-  .loader-red {
-    @apply animate-spin h-8 w-8 rounded-full border-4 border-red-600/40 border-t-red-600 border-l-red-600
-  }
-  .loader-white {
-    @apply animate-spin h-8 w-8 rounded-full border-4 border-white/40 border-t-white border-l-white
-  }
-}
-
-@layer utilities {
-  .is-loading {
-    @apply animate-pulse bg-gray-500 rounded-md
   }
 }
 
